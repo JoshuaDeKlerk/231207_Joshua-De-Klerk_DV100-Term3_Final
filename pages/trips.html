@@ -38,6 +38,89 @@
             </div>
         </nav>
 
+        <div class="container mt-5 pt-5">
+            
+            <!-- Header -->
+            <h2>Browse Trips</h2>
+
+            <!-- Filters & Sorts -->
+            <div class="row">
+                <!-- Filter Radio buttons -->
+                <div class="btn-group col-auto" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="filterRadio" id="allTripsFilter" value="" autocomplete="off" checked>
+                    <label class="btn btn-outline-success" for="allTripsFilter">All Destinations</label>
+                
+                    <input type="radio" class="btn-check" name="filterRadio" id="shortFilter" value="Short" autocomplete="off">
+                    <label class="btn btn-outline-success" for="shortFilter">Short Duration</label>
+                
+                    <input type="radio" class="btn-check" name="filterRadio" id="longFilter" value="Long" autocomplete="off">
+                    <label class="btn btn-outline-success" for="longFilter">Long Duration</label>
+                
+                    <input type="radio" class="btn-check" name="filterRadio" id="singleFilter" value="Single" autocomplete="off">
+                    <label class="btn btn-outline-success" for="singleFilter">Single Destination</label>
+                
+                    <input type="radio" class="btn-check" name="filterRadio" id="multiFilter" value="Multi" autocomplete="off">
+                    <label class="btn btn-outline-success" for="multiFilter">Multi Destination</label>
+                
+                    <input type="radio" class="btn-check" name="filterRadio" id="roundFilter" value="Round" autocomplete="off">
+                    <label class="btn btn-outline-success" for="roundFilter">Round Trip</label>
+                
+                    <input type="radio" class="btn-check" name="filterRadio" id="rowFilter" value="Row" autocomplete="off">
+                    <label class="btn btn-outline-success" for="rowFilter">Row Boat Special</label>
+                </div>
+
+                
+            
+                
+          </div>
+            </div>
+
+
+            <!-- List of plant cards -->
+            <div class="row py-5 gy-3" id="tripsContainer">
+
+                <!-- Browse Card Template -->
+                <template id="tripCardTemplate">
+                    <div class="col-3">
+                
+                        <!-- Card -->
+                        <div class="card">
+                            <img src="../assets/Trips/Cruise1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="priceBox" id="priceText">
+                                    <p class="card-text">R20000</p>
+                                </div>
+                                <h5 class="card-title" id="nameText">Caribbean</h5>
+                                <p class="card-text" id="descriptionText">Sail through the Caribbean's stunning islands on our luxurious cruise, where adventure, relaxation, and culinary delights await, creating unforgettable memories.</p>
+                                
+                                <div class="weatherInfo" id="weatherInfo">
+                                    <div class="col">
+                                        <img src="../assets/WeatherAplication/humidity.png" class="tempIcon">
+                                            <div>
+                                                <p class="temp">22°C</p>
+                                                <p>Tempreture</p>
+                                            </div>        
+                                    </div>
+                                    <div class="col">
+                                        <img src="../assets/WeatherAplication/wind.png" class="tempIcon">
+                                            <div>
+                                                <p class="wind">15km/h</p>
+                                                <p>Wind</p>
+                                            </div>  
+                                    </div>         
+                                </div>
+                                <button class="purchaceBtn"><h6>Purchase Tickets</h6></button>                   
+                            </div>
+                        </div>
+            
+                    </div>
+                </template>
+                   
+            </div>
+
+            </div>
+
+        
         <!-- Trips Card Template -->
     
         <template id="TripsCardTemplate">
@@ -50,38 +133,10 @@
 
             </div>
         </template>
-        <div class="col-2">
-    
-            <!-- Card -->
-            <div class="card">
-                <img src="../assets/Trips/Cruise1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="priceBox" id="priceText">
-                        <p class="card-text">R20000</p>
-                    </div>
-                    <h5 class="card-title" id="nameText">Caribbean</h5>
-                    <p class="card-text" id="descriptionText">Sail through the Caribbean's stunning islands on our luxurious cruise, where adventure, relaxation, and culinary delights await, creating unforgettable memories.</p>
-                    <div class="weatherInfo">
-                        <div class="col">
-                            <img src="../assets/WeatherAplication/humidity.png" class="tempIcon">
-                                <div>
-                                    <p class="temp">22°C</p>
-                                    <p>Tempreture</p>
-                                </div>        
-                        </div>
-                        <div class="col">
-                            <img src="../assets/WeatherAplication/wind.png" class="tempIcon">
-                                <div>
-                                    <p class="wind">15km/h</p>
-                                    <p>Wind</p>
-                                </div>  
-                        </div>         
-                    </div>                   
-                </div>
-            </div>
-
+        <div class="row pt-5">
+             
         </div>
-
+        
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paradise Voyages</title>
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+        <!-- ----------------------------------------------------------------------------------- -->
+        <!-- Nav Bar -->
+
+        <nav class="navbar fixed-top">
+            <div class="container">
+    
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/Logo/Logo With Name On The Side.svg">
+            </a>
+    
+                <!-- Nav Items -->
+                <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><h6>Home</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/trips.html"><h6>Trips</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/purchase.html"><h6>Purchase</h6></a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    
+
+        <!-- Carrousel -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Slides -->
+            <div class="carousel-inner full-height">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(assets/HeroImages/Slide1.jpg);">
+                    <div class="container full-height" style="align-items: center; justify-content: center; display: flex;">
+                        <div style=" text-align: center;">
+                            <!-- Loading Text -->
+                            <div class="loadingText">
+                                <img src="assets/Logo/Logo Without Name HomePage Slider.svg">
+                                <h1 style="font-size: 100px;  color: #EDFF81;">PARADISE VOYAGES</h1>
+                            </div>
+
+                            <!-- Loaded Text -->
+                            <div class="loadedText" style="display: none;">
+                                <h1 style="font-size: 70px;  color: #EDFF81;">WELCOME TO<br>PARADISE VOYAGES</h1>
+                                <button class="slide1btn">
+                                    <h5>Browse Our Trips</h5>
+                                </button>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(assets/HeroImages/Slide2.png);">
+                    <div class="container full-height" style="align-items: center; justify-content: center; display: flex;">
+                        <div class="weatherCard">
+                            <div class="searchBar">
+                                <input type="text" placeholder="enter city name" spellcheck="false">
+                                <button>
+                                    <img src="assets/WeatherAplication/search.png">
+                                </button>
+                            </div>
+                            <div class="error">
+                                <p>Invalid City Name</p>
+                            </div>
+                            <div class="weather">
+                                <img src="assets/WeatherAplication/rain.png" class="weather-icon">
+                                <h1 class="temp" id="temp">22°C</h1>
+                                <h2 class="city">Pretoria</h2>
+                                <div class="details">
+                                    <div class="col">
+                                        <img src="assets/WeatherAplication/humidity.png">
+                                        <div>
+                                            <p class="humidity">50%</p>
+                                            <p>Humidity</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="assets/WeatherAplication/wind.png">
+                                        <div>
+                                            <p class="wind">15 km/h</p>
+                                            <p>Wind Speed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(assets/HeroImages/Slide3.png);">
+                    <div class="container full-height" style="align-items: center; justify-content: center; display: flex; flex-direction: column;">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Cruise Map
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55349.54877181287!2d31.031146499999995!3d-29.88310639999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a9019b2fa7ad%3A0x9ec214ee099c63d8!2sHarbour%2C%20Durban!5e0!3m2!1sen!2sza!4v1693915966776!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Additional Information
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p><b>Overview:</b>
+                                        Paradise Voyages is a renowned cruise website that specializes in offering cruise tickets and organizing unforgettable cruise experiences. With a fleet of their own ships and a wide array of cruise options, they cater to both seasoned travelers and those seeking their first cruise adventure. Here's some additional information about Paradise Voyages:
+                                    </p><p><br>    
+                                        <b>Cruise Ticket Booking:</b>
+                                        Paradise Voyages provides a user-friendly platform for customers to browse, select, and book cruise tickets for various destinations around the world. Their website features a comprehensive search and booking system, allowing travelers to filter cruises by destination, duration, cruise line, and more. Whether it's a tropical island getaway, an Alaskan wilderness expedition, or a European river cruise, Paradise Voyages offers an extensive range of options to suit every traveler's preference.
+                                    </p><p><br>    
+                                        <b>Diverse Fleet of Ships:</b>
+                                        Paradise Voyages takes pride in their diverse fleet of cruise ships, each designed to provide passengers with exceptional comfort, entertainment, and dining experiences. Their ships range from intimate boutique vessels perfect for romantic getaways to larger cruise liners with a full array of amenities, including pools, spas, theaters, and gourmet restaurants. The cruise line continuously invests in modernizing and upgrading their fleet to ensure the highest standards of safety and luxury.
+                                    </p><p><br>  
+                                        <b>Unique Cruise Experiences:</b>
+                                        Paradise Voyages specializes in creating unique and unforgettable cruise experiences. They offer themed cruises, such as adventure cruises for thrill-seekers, family-friendly cruises with kid-friendly activities, and luxury cruises for those seeking a more upscale experience. Additionally, Paradise Voyages frequently collaborates with local experts and guides at various destinations to provide passengers with immersive shore excursions and cultural experiences.
+                                    </p><p><br> 
+                                        <b>Customer-Centric Approach:</b>
+                                        Customer satisfaction is at the heart of Paradise Voyages' business philosophy. They prioritize customer service excellence by offering 24/7 support, ensuring smooth embarkation and disembarkation processes, and accommodating special requests to make each cruise journey personalized and memorable.
+                                    </p>                                            
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  FAQ
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p><b>1. How do I book a cruise with Paradise Voyages?</b>
+                                    <br>
+                                        Booking a cruise with Paradise Voyages is easy! Visit our website and use our user-friendly search and booking system to find your desired cruise. Select your destination, preferred dates, and cruise type, then follow the simple booking process.
+                                    </p><p><b>2. What types of cruises does Paradise Voyages offer?</b>    
+                                    <br>    
+                                        Paradise Voyages offers a wide range of cruise types, including tropical getaways, adventure cruises, family-friendly voyages, luxury cruises, river cruises, and more. We cater to various preferences and travel styles.
+                                    </p><p><b>3. Are there any special deals or discounts available?</b>    
+                                    <br>    
+                                        Yes, we frequently offer special promotions, discounts, and packages. Check our website for the latest deals, early booking discounts, and loyalty programs for returning passengers.
+                                    </p><p><b> 4. Can I customize my cruise experience?</b>   
+                                    <br>   
+                                        Absolutely! We understand that every traveler is unique. You can customize your cruise experience by adding optional excursions, upgrading your cabin, or choosing special packages to suit your preferences.
+                                    </p><p><b> 5. What is included in the cruise fare?</b>   
+                                    <br>    
+                                        Cruise inclusions may vary by cruise line and package. Generally, cruise fares include accommodation, most meals, onboard entertainment, and access to ship amenities. Please refer to the specific cruise details for comprehensive information.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>  
+                </div>
+            
+            </div>
+            
+            <!-- Carrousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+    
+        </div>   
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+    
+</body>
+</html>
